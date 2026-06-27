@@ -12,3 +12,8 @@ createRoot(document.getElementById("root")!).render(
     </ThemeProvider>
   </StrictMode>
 )
+// TODO: Remove hide scrollbar
+// const body = document.querySelector("body") as HTMLBodyElement
+// body.addEventListener("wheel", (event) => {
+//   window.scrollBy({ top: event.deltaY })
+// })
