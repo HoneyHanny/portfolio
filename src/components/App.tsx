@@ -229,6 +229,8 @@ export function App() {
                 description={
                   "Comprehensive JSON manipulation and formatting utility. Features include validation, formatting, minification, and transformation with a clean, intuitive interface."
                 }
+                website="https://json-tools-sigma.vercel.app/"
+                github="https://github.com/HoneyHanny/json-tools"
                 techStacks={[
                   "TypeScript",
                   "React",
@@ -239,6 +241,7 @@ export function App() {
 
               <ProjectCard
                 title={"Phasecraft"}
+                github="https://github.com/HoneyHanny/phasecraft"
                 description={
                   "A 2D game developed to master game programming fundamentals. Demonstrates game loop architecture, collision detection, and sprite management."
                 }
@@ -247,14 +250,16 @@ export function App() {
 
               <ProjectCard
                 title={"Ops Desk"}
+                github="https://github.com/HoneyHanny/ops-desk"
                 description={
                   "Desktop application built with Tauri and React. Designed for operational management with a modern, responsive interface and native performance."
                 }
-                techStacks={["TypeScript", "React", "Tauri", "shacn/ui"]}
+                techStacks={["TypeScript", "React", "Tauri", "shadcn/ui"]}
               />
 
               <ProjectCard
                 title={"Mind Flash"}
+                github="https://github.com/HoneyHanny/mind-flash"
                 description={
                   "Cross-platform application combining React with Tauri for native desktop capabilities. Optimized for performance and user experience."
                 }

@@ -59,9 +59,11 @@ const Header = () => {
         </ul>
       </nav>
       <div className="hidden flex-1 justify-end md:flex">
-        <Button className="border-none bg-[#ff3333] px-6 py-5 text-white shadow-md shadow-red-500/10 hover:bg-[#ff3333]/90 hover:shadow-red-500/20 focus-visible:ring-1 focus-visible:ring-red-500 focus-visible:outline-none">
-          Get in Touch
-        </Button>
+        <a href="/#contact">
+          <Button className="border-none bg-[#ff3333] px-6 py-5 text-white shadow-md shadow-red-500/10 transition-all hover:bg-[#ff3333]/90 hover:shadow-red-500/20 focus-visible:ring-1 focus-visible:ring-red-500 focus-visible:outline-none">
+            Get in Touch
+          </Button>
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
