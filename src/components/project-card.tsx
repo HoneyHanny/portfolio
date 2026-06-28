@@ -53,8 +53,8 @@ const ProjectCard = ({
       <CardContent>
         <span className="text-muted-foreground">{description}</span>
         <div className="mt-4">
-          {techStacks.map((stack) => (
-            <StackBadge>{stack}</StackBadge>
+          {[... new Set(techStacks)].map((stack) => (
+            <StackBadge key={stack}>{stack}</StackBadge>
           ))}
         </div>
       </CardContent>

@@ -7,10 +7,46 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output
+.next/
+out
 dist
 dist-ssr
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Cache / Misc
+.npm
+.eslintcache
+.cache
+.parcel-cache
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
 *.local
+
+# dotenv files
+.env
+.env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +58,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Vite (leftover from migration)
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/

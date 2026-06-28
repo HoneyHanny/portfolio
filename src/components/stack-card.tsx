@@ -19,8 +19,9 @@ const StackCard = ({ icon, header, techStacks }: StackCardProps) => {
         <span className="text-lg font-bold">{header}</span>
       </CardHeader>
       <CardContent className="">
-        {techStacks.map((stack) => (
+        {[... new Set(techStacks)].map((stack) => (
           <Badge
+            key={stack}
             variant="secondary"
             className="m-1 p-1 px-3 font-mono text-muted-foreground"
           >

@@ -1,5 +1,6 @@
-import Header from "./components/header"
-import { Button } from "./components/ui/button"
+"use client"
+import Header from "./header"
+import { Button } from "./ui/button"
 import {
   ArrowRight,
   CircleCheck,
@@ -13,15 +14,15 @@ import {
   Palette,
   Zap,
 } from "lucide-react"
-import { Card, CardContent, CardHeader } from "./components/ui/card"
-import DotBadge from "./components/dot-badge"
-import StackBadge from "./components/stack-badge"
-import ProjectCard from "./components/project-card"
-import Paragraph from "./components/paragraph"
-import StackCard from "./components/stack-card"
-import Heading from "./components/heading"
-import Form from "./components/form"
-import Footer from "./components/footer"
+import { Card, CardContent, CardHeader } from "./ui/card"
+import DotBadge from "./dot-badge"
+import StackBadge from "./stack-badge"
+import ProjectCard from "./project-card"
+import Paragraph from "./paragraph"
+import StackCard from "./stack-card"
+import Heading from "./heading"
+import Form from "./form"
+import Footer from "./footer"
 
 export function App() {
   return (

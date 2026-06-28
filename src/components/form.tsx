@@ -1,3 +1,4 @@
+"use client"
 import * as z from "zod"
 import { Controller, useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -16,10 +17,29 @@ const formSchema = z.object({
 export function Form() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      message: '',
+    }
   })
 
-  function onSubmit(data: z.infer<typeof formSchema>) {
-    console.log(data)
+  async function onSubmit(data: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/api/send-message/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      })
+
+      if (!response.ok) {
+        console.error('err')
+      }
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
@@ -74,7 +94,7 @@ export function Form() {
           control={form.control}
           render={({ field, fieldState }) => (
             <Field data-invalid={fieldState.invalid}>
-              <FieldLabel htmlFor="message">Email Address</FieldLabel>
+              <FieldLabel htmlFor="message">Message</FieldLabel>
               <Textarea
                 {...field}
                 id="message"
