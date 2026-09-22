@@ -3,8 +3,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: 'Haney',
-  description: `Hans' Portfolio`
+  title: "Haney",
+  description: `Hans' Portfolio`,
+  metadataBase: new URL(process.env.NEXT_PUBLIC_CANONICAL_URL ?? ''),
 }
 
 export default function RootLayout({
